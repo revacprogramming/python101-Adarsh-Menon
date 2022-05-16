@@ -2,17 +2,19 @@
 # https://www.py4e.com/lessons/regex
 
 def file():
+  import re
   file=open("dataset/regex.txt")
+  s=[]
   sum=0
-  m=[]
-  for l in file:
-    for n in l:
-      m.append(n)
-      for j in m:
-       if j.isdigit==True:
-         sum=sum+int(j)
-         print(j)
-         print(sum)
+  for check in file:
+    check=check.rstrip()
+    main=re.findall('[0-9]+',check)
+    if s!=main:
+      s=s+main
+  for n in s:
+    sum=sum+int(n)
+  print(sum)
+       
          
          
 
