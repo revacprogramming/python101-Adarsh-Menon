@@ -1,16 +1,30 @@
 # Loops & Iterators
 
-largest = None
-smallest = None
+def largest():
+  largest=0
+  l=[]
+  total=int(input("enter how many element you need"))
+  for i in range(0,total):
+    m=int(input("enter int"))
+    l.append(m)
+  for j in l:
+    if j>largest:
+       largest=j
+  print(largest)
+    
 
-while True:
-    num = input("Enter a number? ")
+largest()
 
-    if num == "done":
-        break
+def smallest():
+  l=[]
+  total=int(input("enter how many element you need"))
+  for i in range(0,total):
+    m=int(input("enter int"))
+    l.append(m)
+  smallest=min(l)
+  print(smallest)
 
-    # ...
+samllest()
+    
 
-    print(num)
 
-print("Maximum", largest)

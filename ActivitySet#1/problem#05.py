@@ -10,6 +10,5 @@ def computepay(h, r):
        result = o*(r*1.50) + 40*r
     return result
 
-hrs = input("Enter Hours:")
 p = computepay(45,10.5)
 print("Pay", p)

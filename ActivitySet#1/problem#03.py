@@ -1,7 +1,8 @@
 # Variables, Expressions & Statements
 
-hrs=input("Enter Hour:")
-rate=input("Eenter Rate per Hour:")
-pay=float(hrs)*float(rate)
 
-print("Pay:", pay)
+def struct(hrs,rate):
+   pay=float(hrs)*float(rate)
+   return pay
+
+struct(10.5,1.5)

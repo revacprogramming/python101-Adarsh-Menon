@@ -1,3 +1,7 @@
 # Why Program
 
-print("hello world")
+
+def print():
+    print("hello world")
+
+print()
