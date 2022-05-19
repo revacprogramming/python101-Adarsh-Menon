@@ -1,3 +1,12 @@
+def get_cs():
+  s=int(input("how many string do you need?"))
+  l=[]
+  for i in range(0,s):
+    s=input("enter string")
+    l.append(s)
+  return l
+
+
 def cs_to_lot(cs):
   """convert connected string to list of strings"""
   n=[]
@@ -9,8 +18,9 @@ def cs_to_lot(cs):
 def lot_to_cs(lot):
   """convert list of strings to connected string"""
   for i in lot:
-    print(i[0],"=",i[1])
-  
+    print(i[0],"=",i[1],end = "  ")
+  print()
+
 
 
 def main():
