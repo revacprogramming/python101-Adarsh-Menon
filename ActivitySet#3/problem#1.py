@@ -1,5 +1,5 @@
-def triangle():
-  n=int(input("how many triangle area do you want?"))
+def rec():
+  n=int(input("how many rectangle area do you want?"))
   i=0
   while n>i:
       area()
@@ -17,4 +17,4 @@ def area():
   area=(x1*(y2-y3)+x2*(y3-y1)+x3*(y1-y3))
   print("Area of rectangle with vertices","(",x1,",",y1,")"",""(",x2,",",y2,")"",""(",x3,",",y3,")","is","=",area)
 
-triangle()
+rec()
