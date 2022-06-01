@@ -1,19 +1,15 @@
-
-
 class Menu:
-    """fill in class definition here"""
-  def __init__(self,add_menu,price_menu):
-      self.add_menu=add_menu
-      self.price_menu=price_menu
 
-  def add(add_menu,price_menu):
-      print("the menu is ",add_menu,"price is",price_menu)
+    def __init__(self,add_menu,price_menu):
+        self.add_menu=add_menu
+        self.price_menu=price_menu
+
+    def add(self):
+        print("the menu is ",self.add_menu,"price is",self.price_menu)
     
 
-
-m = Menu()  # Menu is a class
-m.add("idly", 10)
-m.add("vada". 20)
-
-m.show()
+m1=Menu("idily",10)
+m2=Menu("Vada",20)
+m1.add()
+m2.add()
 
