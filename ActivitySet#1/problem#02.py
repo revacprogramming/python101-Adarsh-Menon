@@ -1,7 +1,7 @@
 # Why Program
 
 
-def print():
+def fn():
     print("hello world")
 
-print()
+fn()

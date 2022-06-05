@@ -14,7 +14,8 @@ def area():
   x3=eval(input("enter value for x3"))
   y3=eval(input("enter value for y3"))
 
-  area=(x1*(y2-y3)+x2*(y3-y1)+x3*(y1-y3))
+  area=2(x1*(y2-y3)+x2*(y3-y1)+x3*(y1-y3))
+  area=abs(area)
   print("Area of rectangle with vertices","(",x1,",",y1,")"",""(",x2,",",y2,")"",""(",x3,",",y3,")","is","=",area)
 
 rec()
