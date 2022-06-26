@@ -1,4 +1,35 @@
-def rec():
+class area():
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+""""def rec():
   n=int(input("how many rectangle area do you want?"))
   i=0
   while n>i:
@@ -18,4 +49,5 @@ def area():
   area=abs(area)
   print("Area of rectangle with vertices","(",x1,",",y1,")"",""(",x2,",",y2,")"",""(",x3,",",y3,")","is","=",area)
 
-rec()
+rec()""""
+
