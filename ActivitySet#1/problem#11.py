@@ -1,23 +1,30 @@
 # Tuples
-def tupl():
-  filename = "dataset/mbox-short.txt"
-  han = open('dataset/romeo.txt')
+name = input("Enter file:")
 
-  for line in han:
-    line = line.rstrip()
-    wds = line.split()
-    for w in wds:
-        di[w] = di.get(w,0) + 1
+if len(name) < 1 : 
+    name = "mbox-short.txt"
+    
+handle = open(name)
+d=dict()
 
-  largest = -1
-  theword = None
-  for k,v in di.items():
-    if v is largest:
-      largest = v
-      theword = k
+for line in handle:
+    
+    if not line.startswith("From "): 
+        continue
+    
+    else:    
+        line=line.split()
+        line=line[5]
+        line=line[0:2]
+        d[line]=d.get(line,0)+1
 
-  print(theword, largest)
+lst=list()
 
+for value,count in d.items():
+    lst.append((value,count))
 
-tupl
+lst.sort()
+
+for value,count in lst:
+    print (value, count)
 
